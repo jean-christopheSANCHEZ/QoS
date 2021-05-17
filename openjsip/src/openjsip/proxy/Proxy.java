@@ -36,10 +36,8 @@ import javax.sip.address.AddressFactory;
 import javax.sip.address.Address;
 import javax.sip.address.URI;
 import javax.sip.address.SipURI;
+import java.io.*;
 import java.util.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.RemoteException;
@@ -2305,6 +2303,9 @@ public class Proxy extends UnicastRemoteObject implements SipListener, RemoteSer
         }
     }
 
+
+
+
     /**
      * *****************************************************************************************
      * *****************************************************************************************
@@ -2312,6 +2313,35 @@ public class Proxy extends UnicastRemoteObject implements SipListener, RemoteSer
      * *****************************************************************************************
      * *****************************************************************************************
      */
+
+    private void sendToBB(String msgToSend,InetAddress addrBB, int port){
+        DatagramSocket client = null;
+        DatagramPacket packet = null;
+
+        try {
+            client = new DatagramSocket(port);
+        } catch (SocketException e) {
+            System.err.println("Error when socket creation : " + e);
+        }
+
+        //Transformation of object Message into array of bytes
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+            oos.writeObject(msgToSend);
+        } catch (IOException e) {
+            System.err.println("Error during serialisation : " + e);
+        }
+
+        //Creation and sending of UDP datagram
+        try {
+            byte[] buffer2 = baos.toByteArray();
+            DatagramPacket packet2 = new DatagramPacket(buffer2, buffer2.length, addrBB , port);
+            client.send(packet2);
+        } catch (IOException e) {
+            System.err.println("Error during client sending: " + e);
+        }
+    }
 
     /**
      * Processes incoming responses and forwards them if necessary.
