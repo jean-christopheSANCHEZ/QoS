@@ -1,0 +1,15 @@
+2021-05-11 10:34:37,173  [main] INFO  - Starting Location Service server v0.0.4...
+2021-05-11 10:34:37,177  [main] INFO  - Default domain: openjsip.net
+2021-05-11 10:34:37,177  [main] INFO  - Reading user database...
+2021-05-11 10:34:37,191  [main] INFO  - Domain openjsip.net contains 6 records.
+2021-05-11 10:34:37,194  [main] INFO  - SNMP agent started at port 1161 with community public
+2021-05-11 10:34:37,195  [main] INFO  - Bindings refresh period: 5 seconds.
+2021-05-11 10:34:37,217  [main] INFO  - Location Service registered as "LocationService" within RMI registry at localhost:1099
+2021-05-11 10:34:37,217  [main] INFO  - Location Service started...
+2021-05-11 10:34:43,395  [RMI TCP Connection(2)-127.0.0.1] DEBUG - Binding updated ( sip:user2@openjsip.net ): Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+2021-05-11 10:34:45,553  [RMI TCP Connection(2)-127.0.0.1] DEBUG - Binding updated ( sip:user1@openjsip.net ): Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+2021-05-11 10:43:43,430  [RMI TCP Connection(18)-127.0.0.1] DEBUG - Binding updated ( sip:user2@openjsip.net ): Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+2021-05-11 10:43:45,574  [RMI TCP Connection(18)-127.0.0.1] DEBUG - Binding updated ( sip:user1@openjsip.net ): Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+2021-05-11 10:53:42,223  [Timer-0] DEBUG - Binding expired: Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>;expires=0
+2021-05-11 10:53:42,223  [Timer-0] DEBUG - Binding expired: Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>;expires=0
+2021-05-11 10:55:09,381  [Thread-4] INFO  - Shutting down...

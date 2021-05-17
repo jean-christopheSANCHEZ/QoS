@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/snmp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jain-sdp-1.0.115.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jain-sip-ri-1.2.115.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jain-sip-api-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jain-sip-sdp-1.2.115.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openjsip.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openjsip-remote.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

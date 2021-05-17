@@ -1,0 +1,29 @@
+2021-05-11 10:34:38,175  [main] INFO  - Starting Registrar v0.0.4...
+2021-05-11 10:34:38,177  [main] INFO  - Connecting to Location Service server at localhost:1099 ...
+2021-05-11 10:34:38,203  [main] INFO  - Successfully connected.
+2021-05-11 10:34:38,261  [main] WARN  - No domains configured. Retreiving the domain list from Location Service...
+2021-05-11 10:34:38,263  [main] INFO  - Registrar is responsible for domains: openjsip.net
+2021-05-11 10:34:38,263  [main] INFO  - Authentication disabled.
+2021-05-11 10:34:38,263  [main] INFO  - Registration lifetime (seconds): min 60, max 3600
+2021-05-11 10:34:38,268  [main] INFO  - SNMP agent started at port 1162 with community public
+2021-05-11 10:34:38,277  [main] INFO  - Registrar registered as "Registrar" within RMI registry at localhost:1099
+2021-05-11 10:34:38,277  [main] INFO  - Registrar started...
+2021-05-11 10:34:39,992 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:34:39,993 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user2" <sip:user2@192.168.1.254>
+2021-05-11 10:34:40,040 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:34:43,387 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:34:43,387 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user2" <sip:user2@192.168.1.254>
+2021-05-11 10:34:43,398 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:34:43,481 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:34:43,481 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user1" <sip:user1@192.168.1.254>
+2021-05-11 10:34:43,489 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:34:45,538 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:34:45,538 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user1" <sip:user1@192.168.1.254>
+2021-05-11 10:34:45,558 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(2)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:43:43,415 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:43:43,415 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user2" <sip:user2@192.168.1.254>
+2021-05-11 10:43:43,432 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:43:45,568 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - -------------------
+2021-05-11 10:43:45,568 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - Incoming REGISTER request sip:192.168.1.254 To: "user1" <sip:user1@192.168.1.254>
+2021-05-11 10:43:45,577 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [RMI TCP Connection(5)-127.0.0.1] DEBUG - Replied 200 ( OK ) 
+2021-05-11 10:55:09,382  [Thread-5] INFO  - Shutting down...

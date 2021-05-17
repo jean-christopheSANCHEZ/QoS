@@ -1,0 +1,1175 @@
+2021-05-11 10:34:39,251  [main] INFO  - Starting Proxy v0.0.4...
+2021-05-11 10:34:39,317  [main] INFO  - Configuring interfaces...
+2021-05-11 10:34:39,318  [main] TRACE - Configuring interface #1: fe80:0:0:0:6a05:caff:fe24:911f%eth0
+2021-05-11 10:34:39,319  [main] TRACE - Creating ListeningPoint for fe80:0:0:0:6a05:caff:fe24:911f%eth0:5060 udp
+2021-05-11 10:34:39,428  [main] TRACE - Creating new SipProvider.
+2021-05-11 10:34:39,431  [main] TRACE - Creating ListeningPoint for fe80:0:0:0:6a05:caff:fe24:911f%eth0:5060 tcp
+2021-05-11 10:34:39,433  [main] TRACE - Adding ListeningPoint to SipProvider.
+2021-05-11 10:34:39,433  [main] TRACE - Configuring interface #2: 192.168.1.254
+2021-05-11 10:34:39,433  [main] TRACE - Creating ListeningPoint for 192.168.1.254:5060 udp
+2021-05-11 10:34:39,434  [main] TRACE - Creating new SipProvider.
+2021-05-11 10:34:39,434  [main] TRACE - Creating ListeningPoint for 192.168.1.254:5060 tcp
+2021-05-11 10:34:39,434  [main] TRACE - Adding ListeningPoint to SipProvider.
+2021-05-11 10:34:39,434  [main] TRACE - Configuring interface #3: 0:0:0:0:0:0:0:1%lo
+2021-05-11 10:34:39,434  [main] TRACE - Creating ListeningPoint for 0:0:0:0:0:0:0:1%lo:5060 udp
+2021-05-11 10:34:39,435  [main] TRACE - Creating new SipProvider.
+2021-05-11 10:34:39,435  [main] TRACE - Creating ListeningPoint for 0:0:0:0:0:0:0:1%lo:5060 tcp
+2021-05-11 10:34:39,436  [main] TRACE - Adding ListeningPoint to SipProvider.
+2021-05-11 10:34:39,436  [main] TRACE - Configuring interface #4: 127.0.0.1
+2021-05-11 10:34:39,436  [main] TRACE - Creating ListeningPoint for 127.0.0.1:5060 udp
+2021-05-11 10:34:39,436  [main] TRACE - Creating new SipProvider.
+2021-05-11 10:34:39,436  [main] TRACE - Creating ListeningPoint for 127.0.0.1:5060 tcp
+2021-05-11 10:34:39,436  [main] TRACE - Adding ListeningPoint to SipProvider.
+2021-05-11 10:34:39,437  [main] INFO  - Interface #1: fe80:0:0:0:6a05:caff:fe24:911f%eth0 (fe80:0:0:0:6a05:caff:fe24:911f%eth0) via udp, tcp
+2021-05-11 10:34:39,437  [main] INFO  - Interface #2: 192.168.1.254 (192.168.1.254) via udp, tcp
+2021-05-11 10:34:39,437  [main] INFO  - Interface #3: localhost (0:0:0:0:0:0:0:1%lo) via udp, tcp
+2021-05-11 10:34:39,437  [main] INFO  - Interface #4: localhost (127.0.0.1) via udp, tcp
+2021-05-11 10:34:39,437  [main] INFO  - Connecting to Location Service server at localhost:1099 ...
+2021-05-11 10:34:39,463  [main] INFO  - Successfully connected.
+2021-05-11 10:34:39,463  [main] WARN  - No domains configured. Retreiving the domain list from Location Service...
+2021-05-11 10:34:39,464  [main] INFO  - Proxy is responsible for domains: openjsip.net
+2021-05-11 10:34:39,464  [main] INFO  - Authentication disabled.
+2021-05-11 10:34:39,464  [main] INFO  - Proxy operation mode: stateless.
+2021-05-11 10:34:39,465  [main] INFO  - Loading method plugins...
+2021-05-11 10:34:39,465  [main] INFO  - Loading openjsip.proxy.plugins.RegisterPlugin
+2021-05-11 10:34:39,475  [main] INFO  - SNMP agent started at port 1163 with community public
+2021-05-11 10:34:39,482  [main] INFO  - Proxy registered as "Proxy" within RMI registry at localhost:1099
+2021-05-11 10:34:39,482  [main] INFO  - Proxy started...
+2021-05-11 10:34:39,538 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] DEBUG - -------------------
+2021-05-11 10:34:39,539 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] DEBUG - Incoming OPTIONS request sip:192.168.1.254
+2021-05-11 10:34:39,540 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - 
+OPTIONS sip:192.168.1.254 SIP/2.0
+Call-ID: 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0
+CSeq: 269 OPTIONS
+From: "user1" <sip:user1@192.168.1.254>;tag=161cdfa5
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-8dee868b7dc7141d083ac0cca10a9c09
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Server transaction for request is: null
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:39,541 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] TRACE - Determining targets for request.
+2021-05-11 10:34:39,546 3616351f95158fca51b6635bf1960969@0:0:0:0:0:0:0:0 [Thread-13] DEBUG - Target cannot be determined. 480 ( Temporarily Unavailable ) replied.
+2021-05-11 10:34:39,911 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] DEBUG - -------------------
+2021-05-11 10:34:39,911 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] DEBUG - Incoming REGISTER request sip:192.168.1.254
+2021-05-11 10:34:39,911 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - 
+REGISTER sip:192.168.1.254 SIP/2.0
+Call-ID: 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0
+CSeq: 2 REGISTER
+From: "user2" <sip:user2@192.168.1.254>;tag=aff84384
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-dfb9720a98cd174aa1b25015d7a71f44
+Max-Forwards: 70
+Expires: 0
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Server transaction for request is: null
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:39,912 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] DEBUG - Processing request via class openjsip.proxy.plugins.RegisterPlugin method plugin.
+2021-05-11 10:34:40,057 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] DEBUG - Replied OK (200)
+2021-05-11 10:34:40,057 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0 [Thread-15] TRACE - 
+SIP/2.0 200 OK
+Call-ID: 815de1f7d883338856d22d9b10a8d359@0:0:0:0:0:0:0:0
+CSeq: 2 REGISTER
+From: "user2" <sip:user2@192.168.1.254>;tag=aff84384
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-dfb9720a98cd174aa1b25015d7a71f44
+Date: Tue, 11 May 2021 08:34:40 GMT
+Content-Length: 0
+
+
+2021-05-11 10:34:43,378 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] DEBUG - -------------------
+2021-05-11 10:34:43,378 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] DEBUG - Incoming REGISTER request sip:192.168.1.254
+2021-05-11 10:34:43,378 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - 
+REGISTER sip:192.168.1.254 SIP/2.0
+Call-ID: 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0
+CSeq: 1 REGISTER
+From: "user2" <sip:user2@192.168.1.254>;tag=95c7db61
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-f0da994fba4a51c00f363a504b518703
+Max-Forwards: 70
+User-Agent: Jitsi1.0-build.3967Linux
+Expires: 600
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+Content-Length: 0
+
+
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Server transaction for request is: null
+2021-05-11 10:34:43,379 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:43,380 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:43,380 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:43,380 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:43,380 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:43,380 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] DEBUG - Processing request via class openjsip.proxy.plugins.RegisterPlugin method plugin.
+2021-05-11 10:34:43,404 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] DEBUG - Replied OK (200)
+2021-05-11 10:34:43,404 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0 [Thread-16] TRACE - 
+SIP/2.0 200 OK
+Call-ID: 53ec71af02891f14db359a09118e7ab9@0:0:0:0:0:0:0:0
+CSeq: 1 REGISTER
+From: "user2" <sip:user2@192.168.1.254>;tag=95c7db61
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-f0da994fba4a51c00f363a504b518703
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+Date: Tue, 11 May 2021 08:34:43 GMT
+Content-Length: 0
+
+
+2021-05-11 10:34:43,411 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] DEBUG - -------------------
+2021-05-11 10:34:43,413 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] DEBUG - -------------------
+2021-05-11 10:34:43,416 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] DEBUG - Incoming OPTIONS request sip:192.168.1.254
+2021-05-11 10:34:43,417 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - 
+OPTIONS sip:192.168.1.254 SIP/2.0
+Call-ID: 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0
+CSeq: 271 OPTIONS
+From: "user2" <sip:user2@192.168.1.254>;tag=587efc0c
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-7b0af8c3d933be93a8f97771ab413c12
+Max-Forwards: 70
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:43,413 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] DEBUG - Incoming SUBSCRIBE request sip:user2@192.168.1.254
+2021-05-11 10:34:43,417 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - 
+SUBSCRIBE sip:user2@192.168.1.254 SIP/2.0
+Call-ID: e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0
+CSeq: 1 SUBSCRIBE
+From: "user2" <sip:user2@192.168.1.254>;tag=2a1be5b8
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-806f7c3eb240ddb5b7920c7be0a5ae24
+Max-Forwards: 70
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Event: message-summary
+Accept: application/simple-message-summary
+Expires: 3600
+Content-Length: 0
+
+
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Server transaction for request is: null
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:43,418 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:43,419 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:43,419 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:43,419 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Determining targets for request.
+2021-05-11 10:34:43,421 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:43,421 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Postprocessing routing information...
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Postprocessing finished.
+2021-05-11 10:34:43,422 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=4f8ee821939e8b19ef90b560696bfe63
+
+2021-05-11 10:34:43,423 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:43,423 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Forwarding request statelessly
+2021-05-11 10:34:43,423 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] TRACE - Outgoing request:
+OPTIONS sip:user2@192.168.1.2:5060 SIP/2.0
+Call-ID: 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0
+CSeq: 271 OPTIONS
+From: "user2" <sip:user2@192.168.1.254>;tag=587efc0c
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=4f8ee821939e8b19ef90b560696bfe63,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-7b0af8c3d933be93a8f97771ab413c12
+Max-Forwards: 69
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:34:43,423 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-18] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:43,423 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Server transaction for request is: null
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:43,424 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Determining targets for request.
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Postprocessing routing information...
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:43,426 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Postprocessing finished.
+2021-05-11 10:34:43,427 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=6377283364113294fdd5e934fe1245be
+
+2021-05-11 10:34:43,427 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:43,427 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Forwarding request statelessly
+2021-05-11 10:34:43,427 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] TRACE - Outgoing request:
+SUBSCRIBE sip:user2@192.168.1.2:5060 SIP/2.0
+Call-ID: e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0
+CSeq: 1 SUBSCRIBE
+From: "user2" <sip:user2@192.168.1.254>;tag=2a1be5b8
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=6377283364113294fdd5e934fe1245be,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-806f7c3eb240ddb5b7920c7be0a5ae24
+Max-Forwards: 69
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Event: message-summary
+Accept: application/simple-message-summary
+Expires: 3600
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:34:43,427 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-17] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] DEBUG - -------------------
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] DEBUG - Incoming OPTIONS response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] DEBUG - Status: 200 reason: OK
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=c5d7538b
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=4f8ee821939e8b19ef90b560696bfe63,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-7b0af8c3d933be93a8f97771ab413c12
+CSeq: 271 OPTIONS
+Call-ID: 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=587efc0c
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:43,430 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:43,431 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:43,434 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0 [Thread-19] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=c5d7538b
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-7b0af8c3d933be93a8f97771ab413c12
+CSeq: 271 OPTIONS
+Call-ID: 18622d8326f51dd8db8b461f9fcd3af2@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=587efc0c
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] DEBUG - -------------------
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] DEBUG - Incoming SUBSCRIBE response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] DEBUG - Status: 501 reason: Not implemented
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] TRACE - 
+SIP/2.0 501 Not implemented
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=6377283364113294fdd5e934fe1245be,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-806f7c3eb240ddb5b7920c7be0a5ae24
+CSeq: 1 SUBSCRIBE
+Call-ID: e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=2a1be5b8
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:43,435 e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0 [Thread-20] TRACE - 
+SIP/2.0 501 Not implemented
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-806f7c3eb240ddb5b7920c7be0a5ae24
+CSeq: 1 SUBSCRIBE
+Call-ID: e98697a10c27173cfc3a81f895e73d10@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=2a1be5b8
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:43,474 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] DEBUG - -------------------
+2021-05-11 10:34:43,475 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] DEBUG - Incoming REGISTER request sip:192.168.1.254
+2021-05-11 10:34:43,475 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - 
+REGISTER sip:192.168.1.254 SIP/2.0
+Call-ID: 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0
+CSeq: 2 REGISTER
+From: "user1" <sip:user1@192.168.1.254>;tag=fca865a8
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-0dbf0efa03681f12407d8ccd01429360
+Max-Forwards: 70
+Expires: 0
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Server transaction for request is: null
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:43,476 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] DEBUG - Processing request via class openjsip.proxy.plugins.RegisterPlugin method plugin.
+2021-05-11 10:34:43,493 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] DEBUG - Replied OK (200)
+2021-05-11 10:34:43,493 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0 [Thread-21] TRACE - 
+SIP/2.0 200 OK
+Call-ID: 69bbfbfe6987e026146943f48b63fe16@0:0:0:0:0:0:0:0
+CSeq: 2 REGISTER
+From: "user1" <sip:user1@192.168.1.254>;tag=fca865a8
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-0dbf0efa03681f12407d8ccd01429360
+Date: Tue, 11 May 2021 08:34:43 GMT
+Content-Length: 0
+
+
+2021-05-11 10:34:45,511 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] DEBUG - -------------------
+2021-05-11 10:34:45,511 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] DEBUG - Incoming REGISTER request sip:192.168.1.254
+2021-05-11 10:34:45,511 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - 
+REGISTER sip:192.168.1.254 SIP/2.0
+Call-ID: 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0
+CSeq: 1 REGISTER
+From: "user1" <sip:user1@192.168.1.254>;tag=7eabf825
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-906f8d449106e2745bfbd10eaf233b83
+Max-Forwards: 70
+User-Agent: Jitsi1.0-build.3967Linux
+Expires: 600
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+Content-Length: 0
+
+
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Server transaction for request is: null
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:45,514 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] DEBUG - Processing request via class openjsip.proxy.plugins.RegisterPlugin method plugin.
+2021-05-11 10:34:45,565 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] DEBUG - Replied OK (200)
+2021-05-11 10:34:45,565 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0 [Thread-22] TRACE - 
+SIP/2.0 200 OK
+Call-ID: 33da55284005d51aa96d925c0be8e5ea@0:0:0:0:0:0:0:0
+CSeq: 1 REGISTER
+From: "user1" <sip:user1@192.168.1.254>;tag=7eabf825
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-906f8d449106e2745bfbd10eaf233b83
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>;expires=600
+Date: Tue, 11 May 2021 08:34:45 GMT
+Content-Length: 0
+
+
+2021-05-11 10:34:45,572 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] DEBUG - -------------------
+2021-05-11 10:34:45,573 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] DEBUG - Incoming SUBSCRIBE request sip:user1@192.168.1.254
+2021-05-11 10:34:45,573 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - 
+SUBSCRIBE sip:user1@192.168.1.254 SIP/2.0
+Call-ID: 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0
+CSeq: 1 SUBSCRIBE
+From: "user1" <sip:user1@192.168.1.254>;tag=92000f2a
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-3e13e6ebc56b9bb78cb9cd1f199effb1
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Event: message-summary
+Accept: application/simple-message-summary
+Expires: 3600
+Content-Length: 0
+
+
+2021-05-11 10:34:45,574 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] DEBUG - -------------------
+2021-05-11 10:34:45,575 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] DEBUG - Incoming OPTIONS request sip:192.168.1.254
+2021-05-11 10:34:45,576 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:45,580 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - 
+OPTIONS sip:192.168.1.254 SIP/2.0
+Call-ID: 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0
+CSeq: 270 OPTIONS
+From: "user1" <sip:user1@192.168.1.254>;tag=6446bf49
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-a443c8770ec12b5fe81fd8697cb80c5e
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Server transaction for request is: null
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:45,581 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Determining targets for request.
+2021-05-11 10:34:45,583 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Server transaction for request is: null
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:45,584 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Determining targets for request.
+2021-05-11 10:34:45,585 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Forwarding request to sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:45,585 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - RequestURI replaced with sip:user1@192.168.1.1:5060
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Postprocessing routing information...
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Postprocessing finished.
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=b70d7af9efc91195807cec2f6552b6d2
+
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Forwarding request statelessly
+2021-05-11 10:34:45,586 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] TRACE - Outgoing request:
+SUBSCRIBE sip:user1@192.168.1.1:5060 SIP/2.0
+Call-ID: 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0
+CSeq: 1 SUBSCRIBE
+From: "user1" <sip:user1@192.168.1.254>;tag=92000f2a
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=b70d7af9efc91195807cec2f6552b6d2,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-3e13e6ebc56b9bb78cb9cd1f199effb1
+Max-Forwards: 69
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Event: message-summary
+Accept: application/simple-message-summary
+Expires: 3600
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+BYE
+
+2021-05-11 10:34:45,587 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-23] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:45,590 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Forwarding request to sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - RequestURI replaced with sip:user1@192.168.1.1:5060
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Postprocessing routing information...
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Postprocessing finished.
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=32157f76f4f8247769c6820b394df65f
+
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:45,591 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Forwarding request statelessly
+2021-05-11 10:34:45,592 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] TRACE - Outgoing request:
+OPTIONS sip:user1@192.168.1.1:5060 SIP/2.0
+Call-ID: 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0
+CSeq: 270 OPTIONS
+From: "user1" <sip:user1@192.168.1.254>;tag=6446bf49
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=32157f76f4f8247769c6820b394df65f,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-a443c8770ec12b5fe81fd8697cb80c5e
+Max-Forwards: 69
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:34:45,592 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-24] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:45,595 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] DEBUG - -------------------
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] DEBUG - Incoming SUBSCRIBE response from "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] DEBUG - Status: 501 reason: Not implemented
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] TRACE - 
+SIP/2.0 501 Not implemented
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=b70d7af9efc91195807cec2f6552b6d2,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-3e13e6ebc56b9bb78cb9cd1f199effb1
+CSeq: 1 SUBSCRIBE
+Call-ID: 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=92000f2a
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:45,601 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:45,602 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0 [Thread-25] TRACE - 
+SIP/2.0 501 Not implemented
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-3e13e6ebc56b9bb78cb9cd1f199effb1
+CSeq: 1 SUBSCRIBE
+Call-ID: 97d12d79d0ddac66dd2a97804e31e927@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=92000f2a
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:45,602 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] DEBUG - -------------------
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] DEBUG - Incoming OPTIONS response from "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] DEBUG - Status: 200 reason: OK
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] TRACE - 
+SIP/2.0 200 OK
+To: "user1" <sip:user1@192.168.1.254>;tag=f151bdd2
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=32157f76f4f8247769c6820b394df65f,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-a443c8770ec12b5fe81fd8697cb80c5e
+CSeq: 270 OPTIONS
+Call-ID: 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=6446bf49
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:45,603 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0 [Thread-26] TRACE - 
+SIP/2.0 200 OK
+To: "user1" <sip:user1@192.168.1.254>;tag=f151bdd2
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-a443c8770ec12b5fe81fd8697cb80c5e
+CSeq: 270 OPTIONS
+Call-ID: 3ee29502ed46d56ca409262b19afc6d6@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=6446bf49
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:34:49,846 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] DEBUG - -------------------
+2021-05-11 10:34:49,847 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] DEBUG - Incoming INVITE request sip:user2@192.168.1.254
+2021-05-11 10:34:49,848 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - 
+INVITE sip:user2@192.168.1.254 SIP/2.0
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+CSeq: 1 INVITE
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Type: application/sdp
+Content-Length: 788
+
+v=0
+o=user1 0 0 IN IP4 192.168.1.1
+s=-
+c=IN IP4 192.168.1.1
+t=0 0
+m=audio 5056 RTP/AVP 9 96 97 98 100 0 8 102 3 103 5 6 101
+a=rtpmap:9 G722/8000
+a=rtpmap:96 SILK/24000
+a=rtpmap:97 SILK/16000
+a=rtpmap:98 speex/32000
+a=rtpmap:100 speex/16000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:102 iLBC/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:103 speex/8000
+a=rtpmap:5 DVI4/8000
+a=rtpmap:6 DVI4/16000
+a=rtpmap:101 telephone-event/8000
+a=extmap:1 urn:ietf:params:rtp-hdrext:csrc-audio-level
+m=video 5058 RTP/AVP 104 99
+a=recvonly
+a=rtpmap:104 H264/90000
+a=fmtp:104 profile-level-id=4DE01f;packetization-mode=1
+a=imageattr:104 send * recv [x=[0-1920],y=[0-1080]]
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=4DE01f
+a=imageattr:99 send * recv [x=[0-1920],y=[0-1080]]
+
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Server transaction for request is: null
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:34:49,851 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Determining targets for request.
+2021-05-11 10:34:49,857 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Postprocessing routing information...
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Postprocessing finished.
+2021-05-11 10:34:49,858 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=5d850f69505b503b4215ee4307df6986
+
+2021-05-11 10:34:49,859 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:49,859 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Forwarding request statelessly
+2021-05-11 10:34:49,859 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] TRACE - Outgoing request:
+INVITE sip:user2@192.168.1.2:5060 SIP/2.0
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+CSeq: 1 INVITE
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=5d850f69505b503b4215ee4307df6986,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Max-Forwards: 69
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Type: application/sdp
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 788
+
+v=0
+o=user1 0 0 IN IP4 192.168.1.1
+s=-
+c=IN IP4 192.168.1.1
+t=0 0
+m=audio 5056 RTP/AVP 9 96 97 98 100 0 8 102 3 103 5 6 101
+a=rtpmap:9 G722/8000
+a=rtpmap:96 SILK/24000
+a=rtpmap:97 SILK/16000
+a=rtpmap:98 speex/32000
+a=rtpmap:100 speex/16000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:102 iLBC/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:103 speex/8000
+a=rtpmap:5 DVI4/8000
+a=rtpmap:6 DVI4/16000
+a=rtpmap:101 telephone-event/8000
+a=extmap:1 urn:ietf:params:rtp-hdrext:csrc-audio-level
+m=video 5058 RTP/AVP 104 99
+a=recvonly
+a=rtpmap:104 H264/90000
+a=fmtp:104 profile-level-id=4DE01f;packetization-mode=1
+a=imageattr:104 send * recv [x=[0-1920],y=[0-1080]]
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=4DE01f
+a=imageattr:99 send * recv [x=[0-1920],y=[0-1080]]
+
+2021-05-11 10:34:49,860 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-27] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] DEBUG - -------------------
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] DEBUG - Incoming INVITE response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] DEBUG - Status: 180 reason: Ringing
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] TRACE - 
+SIP/2.0 180 Ringing
+To: <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=5d850f69505b503b4215ee4307df6986,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Record-Route: <sip:192.168.1.254:5060>;lr
+CSeq: 1 INVITE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:49,873 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-28] TRACE - 
+SIP/2.0 180 Ringing
+To: <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Record-Route: <sip:192.168.1.254:5060>;lr
+CSeq: 1 INVITE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:53,761 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] DEBUG - -------------------
+2021-05-11 10:34:53,761 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] DEBUG - Incoming INVITE response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:53,761 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] DEBUG - Status: 200 reason: OK
+2021-05-11 10:34:53,761 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] TRACE - 
+SIP/2.0 200 OK
+To: <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=5d850f69505b503b4215ee4307df6986,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Record-Route: <sip:192.168.1.254:5060>;lr
+CSeq: 1 INVITE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Type: application/sdp
+Content-Length: 788
+
+v=0
+o=user2 0 0 IN IP4 192.168.1.2
+s=-
+c=IN IP4 192.168.1.2
+t=0 0
+m=audio 5061 RTP/AVP 9 96 97 98 100 0 8 102 3 103 5 6 101
+a=rtpmap:9 G722/8000
+a=rtpmap:96 SILK/24000
+a=rtpmap:97 SILK/16000
+a=rtpmap:98 speex/32000
+a=rtpmap:100 speex/16000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:102 iLBC/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:103 speex/8000
+a=rtpmap:5 DVI4/8000
+a=rtpmap:6 DVI4/16000
+a=rtpmap:101 telephone-event/8000
+a=extmap:1 urn:ietf:params:rtp-hdrext:csrc-audio-level
+m=video 5063 RTP/AVP 104 99
+a=inactive
+a=rtpmap:104 H264/90000
+a=fmtp:104 profile-level-id=4DE01f;packetization-mode=1
+a=imageattr:104 send * recv [x=[0-1920],y=[0-1080]]
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=4DE01f
+a=imageattr:99 send * recv [x=[0-1920],y=[0-1080]]
+
+2021-05-11 10:34:53,762 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:53,762 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:53,762 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:53,762 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-29] TRACE - 
+SIP/2.0 200 OK
+To: <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-85dc900e5eee96698562b733a7bc5265
+Record-Route: <sip:192.168.1.254:5060>;lr
+CSeq: 1 INVITE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Type: application/sdp
+Content-Length: 788
+
+v=0
+o=user2 0 0 IN IP4 192.168.1.2
+s=-
+c=IN IP4 192.168.1.2
+t=0 0
+m=audio 5061 RTP/AVP 9 96 97 98 100 0 8 102 3 103 5 6 101
+a=rtpmap:9 G722/8000
+a=rtpmap:96 SILK/24000
+a=rtpmap:97 SILK/16000
+a=rtpmap:98 speex/32000
+a=rtpmap:100 speex/16000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:102 iLBC/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:103 speex/8000
+a=rtpmap:5 DVI4/8000
+a=rtpmap:6 DVI4/16000
+a=rtpmap:101 telephone-event/8000
+a=extmap:1 urn:ietf:params:rtp-hdrext:csrc-audio-level
+m=video 5063 RTP/AVP 104 99
+a=inactive
+a=rtpmap:104 H264/90000
+a=fmtp:104 profile-level-id=4DE01f;packetization-mode=1
+a=imageattr:104 send * recv [x=[0-1920],y=[0-1080]]
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=4DE01f
+a=imageattr:99 send * recv [x=[0-1920],y=[0-1080]]
+
+2021-05-11 10:34:53,770 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-30] DEBUG - -------------------
+2021-05-11 10:34:53,770 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-30] DEBUG - Incoming ACK request sip:192.168.1.254:5060
+2021-05-11 10:34:53,770 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-30] TRACE - 
+ACK sip:192.168.1.254:5060 SIP/2.0
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+CSeq: 1 ACK
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bd1bcfad55ddc635f9c6f33c5d488390
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Max-Forwards: 70
+Route: <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:53,772 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-30] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:53,772 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-30] DEBUG - Strict routing detected ! Request was modified and dispatched again for processing.
+2021-05-11 10:34:53,779 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] DEBUG - -------------------
+2021-05-11 10:34:53,779 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] DEBUG - Incoming ACK request sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254
+2021-05-11 10:34:53,779 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - 
+ACK sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 SIP/2.0
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+CSeq: 1 ACK
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bd1bcfad55ddc635f9c6f33c5d488390
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Server transaction for request is: null
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - No, so forwarding request...
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Postprocessing routing information...
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:53,781 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Postprocessing finished.
+2021-05-11 10:34:53,782 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=6c08e43c3fd31f09253d48c544472d27
+
+2021-05-11 10:34:53,782 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:53,782 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Forwarding request statelessly
+2021-05-11 10:34:53,782 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] TRACE - Outgoing request:
+ACK sip:user2@192.168.1.2:5060 SIP/2.0
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+CSeq: 1 ACK
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=6c08e43c3fd31f09253d48c544472d27,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bd1bcfad55ddc635f9c6f33c5d488390
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Max-Forwards: 69
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:34:53,782 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-31] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:57,105 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-32] DEBUG - -------------------
+2021-05-11 10:34:57,105 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-32] DEBUG - Incoming BYE request sip:192.168.1.254:5060
+2021-05-11 10:34:57,106 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-32] TRACE - 
+BYE sip:192.168.1.254:5060 SIP/2.0
+CSeq: 2 BYE
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+Max-Forwards: 70
+Route: <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bb310236d3b21d619e02436049a297df
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:57,107 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-32] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:57,108 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-32] DEBUG - Strict routing detected ! Request was modified and dispatched again for processing.
+2021-05-11 10:34:57,116 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] DEBUG - -------------------
+2021-05-11 10:34:57,116 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] DEBUG - Incoming BYE request sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254
+2021-05-11 10:34:57,116 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - 
+BYE sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 SIP/2.0
+CSeq: 2 BYE
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bb310236d3b21d619e02436049a297df
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Request doesn't contain Route header.
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Server transaction for request is: null
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - No, so forwarding request...
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Postprocessing routing information...
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:34:57,118 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Postprocessing finished.
+2021-05-11 10:34:57,119 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=ca6a4547a9bc5f054dfb52047ac4a93d
+
+2021-05-11 10:34:57,119 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:34:57,119 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Forwarding request statelessly
+2021-05-11 10:34:57,119 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] TRACE - Outgoing request:
+BYE sip:user2@192.168.1.2:5060 SIP/2.0
+CSeq: 2 BYE
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=ca6a4547a9bc5f054dfb52047ac4a93d,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bb310236d3b21d619e02436049a297df
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:34:57,119 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-33] DEBUG - Request forwarded statelessly.
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] DEBUG - -------------------
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] DEBUG - Incoming BYE response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] DEBUG - Status: 200 reason: OK
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=ca6a4547a9bc5f054dfb52047ac4a93d,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bb310236d3b21d619e02436049a297df
+CSeq: 2 BYE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] DEBUG - Response forwarded statelessly.
+2021-05-11 10:34:57,124 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0 [Thread-34] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=ca8763a8
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-bb310236d3b21d619e02436049a297df
+CSeq: 2 BYE
+Call-ID: 60bb4ee30f54806d84d97bf147962204@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=7f5e8722
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Content-Length: 0
+
+
+2021-05-11 10:35:08,412 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] DEBUG - -------------------
+2021-05-11 10:35:08,412 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] DEBUG - Incoming OPTIONS request sip:192.168.1.254
+2021-05-11 10:35:08,412 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - 
+OPTIONS sip:192.168.1.254 SIP/2.0
+Call-ID: a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0
+CSeq: 272 OPTIONS
+From: "user2" <sip:user2@192.168.1.254>;tag=39be99fe
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-be37dacc53e5f92dab4b9fb6df2909c3
+Max-Forwards: 70
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:35:08,413 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:35:08,413 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:35:08,413 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:35:08,413 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Request doesn't contain Route header.
+2021-05-11 10:35:08,413 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Server transaction for request is: null
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:35:08,414 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Determining targets for request.
+2021-05-11 10:35:08,420 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Forwarding request to sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:35:08,420 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - RequestURI replaced with sip:user2@192.168.1.2:5060
+2021-05-11 10:35:08,421 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:35:08,421 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:35:08,421 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Postprocessing routing information...
+2021-05-11 10:35:08,421 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:35:08,421 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Postprocessing finished.
+2021-05-11 10:35:08,422 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=7f59998268489bcb2b2f8664832e44dd
+
+2021-05-11 10:35:08,423 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:35:08,423 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Forwarding request statelessly
+2021-05-11 10:35:08,423 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] TRACE - Outgoing request:
+OPTIONS sip:user2@192.168.1.2:5060 SIP/2.0
+Call-ID: a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0
+CSeq: 272 OPTIONS
+From: "user2" <sip:user2@192.168.1.254>;tag=39be99fe
+To: "user2" <sip:user2@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=7f59998268489bcb2b2f8664832e44dd,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-be37dacc53e5f92dab4b9fb6df2909c3
+Max-Forwards: 69
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:35:08,424 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-35] DEBUG - Request forwarded statelessly.
+2021-05-11 10:35:08,434 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] DEBUG - -------------------
+2021-05-11 10:35:08,434 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] DEBUG - Incoming OPTIONS response from "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:35:08,434 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] DEBUG - Status: 200 reason: OK
+2021-05-11 10:35:08,434 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=1a788825
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=7f59998268489bcb2b2f8664832e44dd,SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-be37dacc53e5f92dab4b9fb6df2909c3
+CSeq: 272 OPTIONS
+Call-ID: a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=39be99fe
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:35:08,435 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:35:08,435 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:35:08,435 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] DEBUG - Response forwarded statelessly.
+2021-05-11 10:35:08,435 a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0 [Thread-36] TRACE - 
+SIP/2.0 200 OK
+To: "user2" <sip:user2@192.168.1.254>;tag=1a788825
+Via: SIP/2.0/UDP 192.168.1.2:5060;branch=z9hG4bK-333938-be37dacc53e5f92dab4b9fb6df2909c3
+CSeq: 272 OPTIONS
+Call-ID: a5fdb4da0be6490e509cf26fd5a1edc5@0:0:0:0:0:0:0:0
+From: "user2" <sip:user2@192.168.1.254>;tag=39be99fe
+Contact: "user2" <sip:user2@192.168.1.2:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:35:10,571 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] DEBUG - -------------------
+2021-05-11 10:35:10,571 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] DEBUG - Incoming OPTIONS request sip:192.168.1.254
+2021-05-11 10:35:10,571 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - 
+OPTIONS sip:192.168.1.254 SIP/2.0
+Call-ID: 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0
+CSeq: 271 OPTIONS
+From: "user1" <sip:user1@192.168.1.254>;tag=5700b506
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-58746e18f0b92b795d0c350c3bf4f1d8
+Max-Forwards: 70
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Inspecting request for Strict Routing mechanism...
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Strict routing was not detected, because there are no Route headers.
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Request doesn't contain maddr parameter.
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Request doesn't contain Route header.
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Server transaction for request is: null
+2021-05-11 10:35:10,573 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Checking if Request-URI contains an maddr parameter...
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - No, Request-URI is not SIP URI or doesn't contain an maddr parameter.
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Checking if proxy is responsible for the domain...
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Yes, proxy is responsible for the domain.
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Handling special requests like CANCEL and REGISTER...
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - This is not special message or it was not processed. 
+2021-05-11 10:35:10,574 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Determining targets for request.
+2021-05-11 10:35:10,578 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Forwarding request to sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254 statelessly
+2021-05-11 10:35:10,578 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - RequestURI replaced with sip:user1@192.168.1.1:5060
+2021-05-11 10:35:10,578 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Max-Forwards value decremented by one. It is now: 69
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Added Record-Route header: Record-Route: <sip:192.168.1.254:5060>;lr
+
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Postprocessing routing information...
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - No postprocess routing information to do (No routes detected).
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Postprocessing finished.
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Added Via header Via: SIP/2.0/UDP 192.168.1.254:5060;branch=e027f59b05772b45b64171cd76784cda
+
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Leaving existing Content-Length header untouched.
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Forwarding request statelessly
+2021-05-11 10:35:10,579 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] TRACE - Outgoing request:
+OPTIONS sip:user1@192.168.1.1:5060 SIP/2.0
+Call-ID: 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0
+CSeq: 271 OPTIONS
+From: "user1" <sip:user1@192.168.1.254>;tag=5700b506
+To: "user1" <sip:user1@192.168.1.254>
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=e027f59b05772b45b64171cd76784cda,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-58746e18f0b92b795d0c350c3bf4f1d8
+Max-Forwards: 69
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Record-Route: <sip:192.168.1.254:5060>;lr
+Content-Length: 0
+
+
+2021-05-11 10:35:10,580 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-37] DEBUG - Request forwarded statelessly.
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] DEBUG - -------------------
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] DEBUG - Incoming OPTIONS response from "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] DEBUG - Status: 200 reason: OK
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] TRACE - 
+SIP/2.0 200 OK
+To: "user1" <sip:user1@192.168.1.254>;tag=2a11f808
+Via: SIP/2.0/UDP 192.168.1.254:5060;branch=e027f59b05772b45b64171cd76784cda,SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-58746e18f0b92b795d0c350c3bf4f1d8
+CSeq: 271 OPTIONS
+Call-ID: 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=5700b506
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] TRACE - ClientTransaction is null. Forwarding the response statelessly.
+2021-05-11 10:35:10,587 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] TRACE - Top Via header matches proxy. Removing first Via header.
+2021-05-11 10:35:10,588 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] DEBUG - Response forwarded statelessly.
+2021-05-11 10:35:10,588 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0 [Thread-38] TRACE - 
+SIP/2.0 200 OK
+To: "user1" <sip:user1@192.168.1.254>;tag=2a11f808
+Via: SIP/2.0/UDP 192.168.1.1:5060;branch=z9hG4bK-363836-58746e18f0b92b795d0c350c3bf4f1d8
+CSeq: 271 OPTIONS
+Call-ID: 37602852d648dbb38c5a3530bf5ee820@0:0:0:0:0:0:0:0
+From: "user1" <sip:user1@192.168.1.254>;tag=5700b506
+Contact: "user1" <sip:user1@192.168.1.1:5060;transport=udp;registering_acc=192_168_1_254>
+User-Agent: Jitsi1.0-build.3967Linux
+Allow: INFO,OPTIONS,BYE,REFER,SUBSCRIBE,ACK,CANCEL,PUBLISH,NOTIFY,INVITE
+Allow-Events: refer
+Content-Length: 0
+
+
