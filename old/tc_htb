@@ -1,0 +1,24 @@
+    1  man tc
+    2  man tc-ematch
+    3  man tc
+    4  tc qdisc del dev eth2 root
+    5  tc qdisc add dev eth2 root handle 1: htb default 20
+    6  tc class add dev eth2 parent 1: classid 1:1 htb rate 200mbit ceil 200mbit
+    7  cd .qos/beqos/2020_2021/
+    8  ls
+    9  touch tc_chains
+   10  cat tc_chains 
+   11  man tc
+   12  tc -g
+   13  man tc
+   14  tc -g -s class show dev eth2
+   15  tc class add dev eth2 parent 1: classid 1:2 htb rate 800mbit ceil 800mbit
+   16  tc -g -s class show dev eth2
+   17  tc filter add dev eth2 parent 1:0 protocol ip prio 1 handle 12 fw flowid 1:1
+   18  tc filter add dev eth2 parent 1:0 protocol ip prio 1 handle 0 fw flowid 1:2
+   19  tc filter add dev eth2 parent 1:0 protocol ip prio 1 handle 1 fw flowid 1:2
+   20  tc filter add dev eth2 parent 1:0 protocol ip prio 1 handle 0 fw flowid 1:2
+   21  tc -g -s class show dev eth2
+   22  touch tc_htb
+   23  history >> tc_htb 
+
